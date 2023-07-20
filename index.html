@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Result Management System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div  class="container">
+    <h1 style="color: rgb(56, 23, 87); text-align: center; text-decoration-line: underline; text-shadow: 0cqmin;">Student Result Management System</h1>
+
+    <form id="resultForm">
+      <label for="name">Student Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="roll">Roll Number:</label>
+      <input type="text" id="roll" name="roll" required />
+
+      <label for="biology">Biology Marks:</label>
+      <input type="number" id="biology" name="botany" min="0" max="100" required />
+
+      <label for="physics">Physics Marks:</label>
+      <input type="number" id="physics" name="zoology" min="0" max="100" required />
+
+      <label for="chemistry">Chemistry Marks:</label>
+      <input type="number" id="chemistry" name="chemistry" min="0" max="100" required />
+
+      <button type="submit">Add Result</button>
+    </form>
+    <hr>
+    <hr>
+    <div  class="table-container">
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Biology Marks</th>
+            <th>Physics Marks</th>
+            <th>Chemistry Marks</th>
+            <th>CUTToff</th>
+            
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
